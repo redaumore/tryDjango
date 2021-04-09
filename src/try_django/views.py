@@ -4,6 +4,9 @@ from django.template.loader import get_template
 
 def home_page(request):
     my_title = "Hello here"
+    context = {"title": "My title"}
+    if request.user.is_authenticated:
+        context = {"title": "My title Auth", "my_list": [1,2,3,4]}
     return render(request, "home.html", {"title": my_title})
 
 def about_page(request):

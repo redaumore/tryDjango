@@ -6,6 +6,8 @@
 
 {{ user }}
 
-{{ user.is_authenticated }}
+{% if user.is_authenticated %}
+    <h1>User only data</h1>
+{% endif %}
 
 {% endblock %}
