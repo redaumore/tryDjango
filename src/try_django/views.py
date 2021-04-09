@@ -7,7 +7,7 @@ def home_page(request):
     context = {"title": "My title"}
     if request.user.is_authenticated:
         context = {"title": "My title Auth", "my_list": [1,2,3,4]}
-    return render(request, "home.html", {"title": my_title})
+    return render(request, "home.html", context)
 
 def about_page(request):
     my_title = "About Page"
