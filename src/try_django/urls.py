@@ -20,10 +20,16 @@ from .views import (
     about_page,
     contact_page
 )
+from blog.views import (
+    blog_post_detail_page    
+)
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home_page),
     re_path(r'^about?/', about_page),
     re_path(r'^contact?/', contact_page),
+
+    re_path(r'^blog?/', blog_post_detail_page),
 ]
