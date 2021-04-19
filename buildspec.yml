@@ -13,7 +13,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Running tests
-      - python3 manage.py test
+      - python3 src/try_django/manage.py test
 
   post_build:
     commands:
