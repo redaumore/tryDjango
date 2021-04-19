@@ -7,7 +7,7 @@ phases:
     commands:
       # Install dependencies needed for running tests
       - echo Installing dependencies
-      - pip install -r requirements.txt
+      - pip install -r src/try_django/requirements.txt
 
   build:
     commands:
