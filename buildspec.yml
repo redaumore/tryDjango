@@ -13,7 +13,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Running tests -> Disabled
-      - python3 manage.py syncdb
+      - python3 manage.py migrate
       #- python3 src/try_django/manage.py test
 
   post_build:
